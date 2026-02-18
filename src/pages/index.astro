@@ -1,0 +1,21 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import About from "@/components/About.astro";
+import Projects from "@/components/Projects.astro";
+import Footer from "@/components/Footer.astro";
+import MouseTrail from "@/components/MouseTrail";
+---
+
+<Layout
+  title="Francisco Piaggio — Frontend Engineer & Creative Coder"
+  description="Frontend engineer and creative coder from Buenos Aires, Argentina."
+>
+  <div class="relative min-h-screen bg-background bg-grid">
+    <MouseTrail client:load />
+    <Hero />
+    <About />
+    <Projects />
+    <Footer />
+  </div>
+</Layout>

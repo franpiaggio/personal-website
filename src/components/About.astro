@@ -1,0 +1,37 @@
+---
+const skills = [
+  "React", "TypeScript", "JavaScript", "Next.js",
+  "Tailwind CSS", "Node.js", "GraphQL", "REST APIs",
+  "Redux", "React Query", "Testing (Jest/Cypress)",
+  "CI/CD", "Git", "Agile/Scrum", "Performance Optimization",
+  "Design Systems", "Responsive Design", "Accessibility (a11y)",
+  "Micro-Frontends", "Vite", "Webpack",
+  "Creative Coding", "p5.js",
+];
+---
+
+<section class="relative z-10 py-24 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="font-mono text-xs text-primary tracking-widest uppercase">// about</span>
+      <div class="flex-1 h-px bg-border"></div>
+    </div>
+
+    <p class="text-lg md:text-xl text-secondary-foreground leading-relaxed mb-10">
+      Frontend engineer focused on building polished, performant user interfaces.
+      In my spare time I explore the intersection of code and art through{" "}
+      <span class="text-primary font-medium">creative coding</span> and{" "}
+      <span class="text-primary font-medium">algorithmic art</span> projects.
+    </p>
+
+    <div class="flex flex-wrap gap-2">
+      {skills.map((skill) => (
+        <span
+          class="font-mono text-xs px-3 py-1.5 rounded-md border border-border bg-card text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors cursor-default"
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
